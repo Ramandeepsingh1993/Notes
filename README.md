@@ -70,6 +70,7 @@ How to Use Mapping:Mapping in Machine Learning: In machine learning, feature map
 Mapping is a fundamental concept in programming and data manipulation, enabling the transformation and association of data elements in various contexts to achieve specific goals, such as data cleaning, normalization, or enhancing model performance in machine learning.
 what is required to calculate a baseline model on given some data
 to calculate a baseline model, you need to understand your dataset, identify the target variable, choose an appropriate evaluation metric, implement a simple prediction strategy, and evaluate its performance. This baseline serves as a starting point for further model development and optimization.
+
 R-squared (R²) is a statistical measure that indicates how well the regression model approximates the real data points. It's a relative measure of fit that ranges from 0 to 1, where:
 
 R² = 1: The regression model perfectly fits the data.
@@ -85,3 +86,15 @@ Adjusted R-squared: Adjusted R-squared takes into account the number of predicto
 Usage: R-squared is commonly used in regression analysis, such as linear regression, to evaluate how well the model fits the data. It helps analysts and researchers understand the relationship between variables and assess the predictive power of the model.
 
 In summary, R-squared provides a convenient way to quantify the goodness of fit of a regression model, but it should be interpreted alongside other metrics and considerations to fully understand the model's performance.
+Train Set
+The train set is a subset of the overall dataset used to train a machine learning model. This set contains the input data and corresponding target labels that the model uses to learn patterns, relationships, and features in the data. The primary purpose of the train set is to adjust the model's parameters so that it can make accurate predictions on unseen data.
+Validation Set
+Purpose: The validation set is used to fine-tune the model and evaluate its performance during the training process.
+Test Set
+Purpose: The test set is used to evaluate the final performance of the model after training and validation.
+Underfitting
+Definition: Underfitting occurs when a model is too simple to capture the underlying patterns in the data. As a result, it performs poorly on both the training data and unseen data.
+Overfitting
+Definition: Overfitting occurs when a model learns the training data too well, capturing noise and outliers along with the underlying patterns. As a result, the model performs exceptionally well on the training data but poorly on unseen data.
+Generalized Model
+Definition: A generalized model strikes the right balance between fitting the training data well and performing well on unseen data. It captures the underlying patterns without overfitting to noise or underfitting to the data structure.
