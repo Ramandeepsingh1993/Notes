@@ -70,3 +70,18 @@ How to Use Mapping:Mapping in Machine Learning: In machine learning, feature map
 Mapping is a fundamental concept in programming and data manipulation, enabling the transformation and association of data elements in various contexts to achieve specific goals, such as data cleaning, normalization, or enhancing model performance in machine learning.
 what is required to calculate a baseline model on given some data
 to calculate a baseline model, you need to understand your dataset, identify the target variable, choose an appropriate evaluation metric, implement a simple prediction strategy, and evaluate its performance. This baseline serves as a starting point for further model development and optimization.
+R-squared (R²) is a statistical measure that indicates how well the regression model approximates the real data points. It's a relative measure of fit that ranges from 0 to 1, where:
+
+R² = 1: The regression model perfectly fits the data.
+R² = 0: The regression model does not explain any of the variability in the data around the mean.
+In simpler terms, R-squared tells you how much of the variance in the dependent variable (the variable you're trying to predict) can be explained by the independent variables (the variables used in the regression model). Here are some key points about R-squared:
+
+Interpretation: An R² value closer to 1 indicates that the regression model explains a large proportion of the variance in the dependent variable. Conversely, an R² value closer to 0 indicates that the model does not explain much of the variance.
+
+Limitations: R-squared should not be used in isolation to assess the goodness of fit. It does not indicate whether the regression model is biased, whether the predictors are valid, or whether the model is overfitting or underfitting the data.
+
+Adjusted R-squared: Adjusted R-squared takes into account the number of predictors in the model and can be a more reliable measure when comparing models with different numbers of predictors.
+
+Usage: R-squared is commonly used in regression analysis, such as linear regression, to evaluate how well the model fits the data. It helps analysts and researchers understand the relationship between variables and assess the predictive power of the model.
+
+In summary, R-squared provides a convenient way to quantify the goodness of fit of a regression model, but it should be interpreted alongside other metrics and considerations to fully understand the model's performance.
