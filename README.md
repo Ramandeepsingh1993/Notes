@@ -101,3 +101,34 @@ Generalized Model
 Definition: A generalized model strikes the right balance between fitting the training data well and performing well on unseen data. It captures the underlying patterns without overfitting to noise or underfitting to the data structure.
 Parameters are internal variables whose values are learned from the training data during the model fitting process. They directly influence the predictions made by the model
 Hyperparameters are external configuration variables that are set before the learning process begins. They are not directly learned from the data but rather are used to control the learning process
+from sklearn.metrics import mean_absolute_error
+predictions = rf.predict(X_train)
+
+e = mean_absolute_error(y_train, predictions)
+
+ep = e*100 / y.mean()
+
+print(f"${e:.0f} average error; {ep:.2f}% error")
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+cl = RandomForestClassifier(n_estimators=300)
+cl.fit(X_train, y_train)
+
+validation_predictions = cl.predict(X_test)
+
+validation_e = accuracy_score(y_test, validation_predictions)
+
+print(f"{validation_e*100:.2f}% correct")
+
+from sklearn.tree import DecisionTreeRegressor
+from sklearn import tree
+df = pd.DataFrame({'x':x,'y':y})
+X = df.drop('y', axis =1)
+y = df['y']
+regr = DecisionTreeRegressor(random_state = 1234)
+regr.fit(X,y)
+
+import matplotlib.pyplot as plt 
+fig = plt.figure(figsize=(12,10))             # use this to adjust the size of the image
+_ = tree.plot_tree(regr, filled=True) 
