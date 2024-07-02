@@ -121,3 +121,27 @@ regr.fit(X,y)
 import matplotlib.pyplot as plt 
 fig = plt.figure(figsize=(12,10))             # use this to adjust the size of the image
 _ = tree.plot_tree(regr, filled=True) 
+
+sample3 = df.sample(n = 1000, random_state = 23)
+one_hot = pd.get_dummies(sample3, columns = ['Type'])
+one_hot.iloc[564]
+sample4_df = df.sample(n =500, random_state = 67)
+sample4_df['Method']=df['Method'].map({'S':45, 'VB':23, 'SP':67, 'PI':12, 'SA':55})
+sample4_df.iloc[367].values
+pd.Series(data = clf.feature_importances_, index = clf.feature_names_in_)
+
+df1 = pd.DataFrame(data)
+df1['elu_dist'] = ((df['x'] -new_point['x'])**2 + (df['y'] - new_point['y'])**2)
+df1_sorted = df1.sort_values(by='elu_dist')
+df1_sorted['Color'].head(3).value_counts()
+
+from sklearn.tree import DecisionTreeRegressor
+from sklearn import tree
+df = pd.DataFrame({'x':x,'y':y})
+X = df.drop('y', axis =1)
+y = df['y']
+regr = DecisionTreeRegressor(random_state = 1234)
+regr.fit(X,y)
+import matplotlib.pyplot as plt 
+fig = plt.figure(figsize=(12,10))             # use this to adjust the size of the image
+_ = tree.plot_tree(regr, filled=True) 
