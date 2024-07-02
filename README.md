@@ -3,14 +3,7 @@ https://chatgpt.com/
 Notes
 A confusion matrix is a table used to evaluate the performance of a classification algorithm. It summarizes the predictions made by a model against the actual labels in the dataset, providing insights into the types and counts of correct and incorrect predictions.A confusion matrix is a table used to evaluate the performance of a classification algorithm. It allows you to see how well your model's predictions match the actual labels. The matrix compares the predicted labels with the actual labels and shows how many of the predictions were correct and where the errors occurred.
 
-Here’s an example of how to create and display a confusion matrix in Python using a sample dataset:
 
-Load a dataset.
-Split the data into training and testing sets.
-Train a classifier.
-Make predictions.
-Generate and display the confusion matrix.
-Key Terms
 True Positive (TP): The model correctly predicts the positive class.
 True Negative (TN): The model correctly predicts the negative class.
 False Positive (FP): The model incorrectly predicts the positive class (Type I error).
@@ -82,11 +75,7 @@ Interpretation: An R² value closer to 1 indicates that the regression model exp
 
 Limitations: R-squared should not be used in isolation to assess the goodness of fit. It does not indicate whether the regression model is biased, whether the predictors are valid, or whether the model is overfitting or underfitting the data.
 
-Adjusted R-squared: Adjusted R-squared takes into account the number of predictors in the model and can be a more reliable measure when comparing models with different numbers of predictors.
 
-Usage: R-squared is commonly used in regression analysis, such as linear regression, to evaluate how well the model fits the data. It helps analysts and researchers understand the relationship between variables and assess the predictive power of the model.
-
-In summary, R-squared provides a convenient way to quantify the goodness of fit of a regression model, but it should be interpreted alongside other metrics and considerations to fully understand the model's performance.
 Train Set
 The train set is a subset of the overall dataset used to train a machine learning model. This set contains the input data and corresponding target labels that the model uses to learn patterns, relationships, and features in the data. The primary purpose of the train set is to adjust the model's parameters so that it can make accurate predictions on unseen data.
 Validation Set
