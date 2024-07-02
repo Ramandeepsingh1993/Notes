@@ -1,6 +1,7 @@
 # Notes
+https://chatgpt.com/
 Notes
-A confusion matrix is a table used to evaluate the performance of a classification algorithm. It summarizes the predictions made by a model against the actual labels in the dataset, providing insights into the types and counts of correct and incorrect predictions.
+A confusion matrix is a table used to evaluate the performance of a classification algorithm. It summarizes the predictions made by a model against the actual labels in the dataset, providing insights into the types and counts of correct and incorrect predictions.A confusion matrix is a table used to evaluate the performance of a classification algorithm. It allows you to see how well your model's predictions match the actual labels. The matrix compares the predicted labels with the actual labels and shows how many of the predictions were correct and where the errors occurred.
 
 Here’s an example of how to create and display a confusion matrix in Python using a sample dataset:
 
@@ -17,7 +18,7 @@ False Negative (FN): The model incorrectly predicts the negative class (Type II 
 Accuracy: 
 
 Accuracy : (TP+TN)/(TP+TN+FP+FN)
-https://chatgpt.com/
+
 understand why, how, and where to use random_state
 The random_state parameter in machine learning and data processing is crucial for reproducibility. It sets the seed for the random number generator, ensuring that the same sequence of random numbers is produced every time the code is run. This is important when splitting data into training and testing sets, initializing weights in models, or performing random sampling, as it ensures consistent results. By fixing the random state, you can compare the performance of different models or algorithms under the same conditions. Without setting random_state, you might get different results each time you run your code, making debugging and comparison challenging. It's typically used in functions like train_test_split, cross_val_score, and model constructors like RandomForestClassifier. In summary, random_state ensures that your experiments are repeatable and that results can be consistently replicated by others.
 What is label encoding?
@@ -98,3 +99,5 @@ Overfitting
 Definition: Overfitting occurs when a model learns the training data too well, capturing noise and outliers along with the underlying patterns. As a result, the model performs exceptionally well on the training data but poorly on unseen data.
 Generalized Model
 Definition: A generalized model strikes the right balance between fitting the training data well and performing well on unseen data. It captures the underlying patterns without overfitting to noise or underfitting to the data structure.
+Parameters are internal variables whose values are learned from the training data during the model fitting process. They directly influence the predictions made by the model
+Hyperparameters are external configuration variables that are set before the learning process begins. They are not directly learned from the data but rather are used to control the learning process
